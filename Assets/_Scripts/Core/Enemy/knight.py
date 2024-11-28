@@ -13,11 +13,11 @@ class Knight():
         self.__player = player
 
         self.__enemyRunImage = [pygame.image.load(os.path.join('../Art/Enemy/Knight/Run', f'Run {i}.png')) for i in
-                                range(1, 5)]
+                                range(1, 8)]
         self.__enemyAttackImage = [pygame.image.load(os.path.join('../Art/Enemy/Knight/Attack', f'Attack {i}.png')) for
-                                   i in range(1, 5)]
+                                   i in range(1, 22)]
         self.__enemyIdleImage = [pygame.image.load(os.path.join('../Art/Enemy/Knight/Idle', f'Idle {i}.png')) for i in
-                                 range(1, 5)]
+                                 range(1, 15)]
 
         self.__enemyRunImageFlipped = [pygame.transform.flip(img, True, False) for img in self.__enemyRunImage]
         self.__enemyAttackImageFlipped = [pygame.transform.flip(img, True, False) for img in self.__enemyAttackImage]
